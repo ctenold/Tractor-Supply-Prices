@@ -188,7 +188,7 @@
             products.forEach(function(p) {
                 var priceInfo = getProductPriceRange(p.part_number);
                 html += '<div class="product-card" data-sku="' + p.part_number + '">' +
-                    '<img src="' + (p.image_url || 'https://via.placeholder.com/200x120?text=No+Image') + '" onerror="this.src='https://via.placeholder.com/200x120?text=No+Image'" />' +
+                    '<img src="' + (p.image_url || 'https://via.placeholder.com/200x120?text=No+Image') + '" onerror="this.src=';
                     '<h3>' + p.name + '</h3>' +
                     '<div class="sku">SKU: ' + p.part_number + '</div>' +
                     '<div class="price">' + priceInfo + '</div>' +
