@@ -432,7 +432,7 @@
                 var isSale = priceInfo.price_type === 'sale';
                 
                 html += '<div class="location-product">' +
-                    '<img src="' + (p.image_url || 'https://via.placeholder.com/80?text=No+Image') + '" onerror="this.src='https://via.placeholder.com/80?text=No+Image'" />' +
+                    '<img src="' + (p.image_url || 'https://via.placeholder.com/80?text=No+Image') + '" onerror="this.src=\'https://via.placeholder.com/80?text=No+Image\'" />' +
                     '<div class="location-product-info">' +
                         '<h4>' + p.name + '</h4>' +
                         '<div class="sku">SKU: ' + p.part_number + '</div>' +
